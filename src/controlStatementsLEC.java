@@ -77,6 +77,23 @@ public class controlStatementsLEC {
 //
 //        }
 
+
+        //Create a while loop that runs so long as i is less than or equal to 15
+//        boolean condition = true;
+//        int i = 5;
+//        while (condition) {//must use some form of comparison otherwise you will get an infinite loop
+//
+//            if (i == 15) {
+//                condition = false;
+//            }
+//            System.out.println(i);
+//            i++;
+//        } //will output 5,6,7,8,9,10,11,12,13,14,15
+
+
+
+
+
         //DO LOOP
 //        number = 1;
 //      do{
