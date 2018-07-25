@@ -133,6 +133,30 @@ public class controlStatementsLEC {
 //
 //        } while (condition); //will count bacwards from 100 to -10 in 5 increments, e.g. 100, 95, 90, 85 ..., 0, -5, -10
 
+
+////  Create a do-while loop that starts at 2,
+//// and displays the number squared on each line while the number is less than 1,000,000. Output should equal:
+////        2
+////        4
+////        16
+////        256
+////        65536
+//        //
+//        int i = 2;
+//        int powerOfTwo = i ;
+//
+//
+//        do {
+//            System.out.println(powerOfTwo);   // print out the power of two
+//            powerOfTwo = powerOfTwo * powerOfTwo;  // double to get the next one
+//
+//            // repeat until i equals n
+//
+//            i++;
+//        } while (i<=1000000);
+
+
+
 //FOR LOOP
 //        for (int i = 1; i <= 10 ; i++){
 //            System.out.println("i = " + i);;
