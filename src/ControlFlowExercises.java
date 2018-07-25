@@ -5,18 +5,26 @@ public class ControlFlowExercises {
 
         Scanner sc = new Scanner(System.in);
 
-                boolean userContinues = true;
+        boolean anotherGrade = true;
         do {
-            System.out.println("Enter an integer? ");
-            int userInt = sc.nextInt();
-            for (int i = 1; i <= userInt; i += 1) {
-                System.out.printf("%d %d %d\n", i, (i * i), (i * i * i));
+            System.out.println("Enter a grade. ");
+            int numericGrade = sc.nextInt();
+            if (numericGrade >= 88) {
+                System.out.println("A");
+            } else if (numericGrade >= 80) {
+                System.out.println("B");
+            } else if (numericGrade >= 67) {
+                System.out.println("C");
+            } else if (numericGrade >= 60) {
+                System.out.println("D");
+            } else {
+                System.out.println("F");
             }
-            System.out.print("Do you want to continue? ");
+            System.out.print("Do you want to enter another grade (y/n)? ");
             String userResponse = sc.next();
             if (!userResponse.equalsIgnoreCase("y")){
-                userContinues = false;
+                anotherGrade = false;
             }
-        }while (userContinues) ;
+        } while (anotherGrade);
     }
 }
