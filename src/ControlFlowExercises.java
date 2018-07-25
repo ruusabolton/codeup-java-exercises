@@ -2,17 +2,15 @@
 public class ControlFlowExercises {
     public static void main(String[] args) {
 
-//      refactor the previous two exercises to use a for loop instead
-//
-//        Alter your loop to count backwards by 5's from 100 to -10.
+
+        long powerOfTwo= 2;
 
 
-        for (int i = 100; i >= -10; i-=5){
-            System.out.println(i);
+        do {
+            System.out.println(powerOfTwo);   // print out the power of two
+            powerOfTwo = powerOfTwo * powerOfTwo;  // double to get the next one
 
-        }
-    }
-}
+            // repeat until i equals n
 
-
-
+        } while (powerOfTwo <= 1000000);
+    }}
