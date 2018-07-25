@@ -65,9 +65,13 @@ public class controlStatementsLEC {
 //        }
 
 //WHILE STATEMENT - MUST PRINT 10 NUMBERS
+//        public static void main(String[] args){
+//
+//            boolean condition = true;
+//            int number = 0;
+//        }
 
-        boolean condition = true;
-        int number = 0;
+
 //        while (condition){//must use some form of comparison otherwise you will get an infinite loop
 //            number ++;
 //            if(number ==10){
@@ -89,9 +93,6 @@ public class controlStatementsLEC {
 //            System.out.println(i);
 //            i++;
 //        } //will output 5,6,7,8,9,10,11,12,13,14,15
-
-
-
 
 
         //DO WHILE LOOP
@@ -120,6 +121,15 @@ public class controlStatementsLEC {
 //        } while (condition);
 //    }
 
+
+        //WITHOUT BOOLEAN CONDITION STATED
+
+//            int i = 100;
+//                do {
+//            System.out.println(i);
+//            i-= 5;
+//                } while (i <= -10);
+
 //        boolean condition = true;
 ////        Alter your loop to count backwards by 5's from 100 to -10.
 //        //
@@ -141,23 +151,20 @@ public class controlStatementsLEC {
 ////        16
 ////        256
 ////        65536
-//        //
-//        int i = 2;
-//        int powerOfTwo = i ;
-//
-//
-//        do {
-//            System.out.println(powerOfTwo);   // print out the power of two
-//            powerOfTwo = powerOfTwo * powerOfTwo;  // double to get the next one
-//
-//            // repeat until i equals n
-//
-//            i++;
-//        } while (i<=1000000);
 
+
+// ****************//don't use int - otherwise you will have infinite loops!!!!!!
+
+
+//        for (long i = 2; i <= 1000000 ;){
+//
+//            long powerOfTwo = i * i;
+//            System.out.println(powerOfTwo);
+//            powerOfTwo = powerOfTwo * powerOfTwo;
 
 
 //FOR LOOP
+
 //        for (int i = 1; i <= 10 ; i++){
 //            System.out.println("i = " + i);;
 //
@@ -175,15 +182,62 @@ public class controlStatementsLEC {
 //        }
 
 // print the even numbers between 1 and 10
-        for(int i = 1; i <= 10; i++) { // <--+
-            if(i % 2 == 1) { //              |
-                continue; // ----------------+
-            }
-            System.out.println(i);
-        }//will print 2,4,6,8,10
+
+//        for(int i = 1; i <= 10; i++) { // <--+
+//            if(i % 2 == 1) { //              |
+//                continue; // ----------------+
+//            }
+//            System.out.println(i);
+//        }//will print 2,4,6,8,10
+
 //Using continue to skip a parameter
+
 //if(i==8){continue}System.out.println(i); //will print everything EXCEPT 8;
 //if(i==8 || i == 4){continue}System.out.println(i); //will print everything EXCEPT 4 & 8;
 
+ //********** FIZZBUZZ
+
+//One of the most common interview questions for entry-level programmers is the FizzBuzz test.
+// Developed by Imran Ghory, the test is designed to test basic looping and conditional logic skills.
+
+//Write a program that prints the numbers from 1 to 100.
+//For multiples of three print “Fizz” instead of the number
+//For the multiples of five print “Buzz”.
+//For numbers which are multiples of both three and five print “FizzBuzz”.
+
+//for (int i = 0; i <= 100; i+=1){
+//    System.out.println(i);
+//}
+
+        /////////////// order of execution also matters ///////
+
+//        For multiples of three print “Fizz” instead of the number
+
+        for (int i = 0; i <= 100; i+=1){
+            if (i % 15 ==0) {
+                System.out.println("FizzBuzz"); //number is divisible by 3, print Fizz
+            } else if(i % 5 == 0 ){
+                System.out.println("Buzz");
+
+            }else if(i % 3 == 0){
+                System.out.println("Fizz");//numbers which are multiples of both three and five
+            }else{
+                System.out.println(i); //otherwise print number starting from 1 to 100 (less than the fiss, buzz, fizzbuss numbers)
+            }
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
     }
+
 }
