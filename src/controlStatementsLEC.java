@@ -1,6 +1,13 @@
+import java.util.Scanner;
+import java.util.Formatter;
+
+
 public class controlStatementsLEC {
 
     public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
         //BOOLEAN EXPRESSIONS
 ////        discountPercent == 2.3;       // equal to a numeric literal
 ////        letter == 'y' ;               // equal to a char literal
@@ -144,7 +151,7 @@ public class controlStatementsLEC {
 //        } while (condition); //will count bacwards from 100 to -10 in 5 increments, e.g. 100, 95, 90, 85 ..., 0, -5, -10
 
 
-////  Create a do-while loop that starts at 2,
+////  Refactor with a for loop:  loop that starts at 2,
 //// and displays the number squared on each line while the number is less than 1,000,000. Output should equal:
 ////        2
 ////        4
@@ -195,7 +202,7 @@ public class controlStatementsLEC {
 //if(i==8){continue}System.out.println(i); //will print everything EXCEPT 8;
 //if(i==8 || i == 4){continue}System.out.println(i); //will print everything EXCEPT 4 & 8;
 
- //********** FIZZBUZZ
+        //********** FIZZBUZZ
 
 //One of the most common interview questions for entry-level programmers is the FizzBuzz test.
 // Developed by Imran Ghory, the test is designed to test basic looping and conditional logic skills.
@@ -213,31 +220,69 @@ public class controlStatementsLEC {
 
 //        For multiples of three print “Fizz” instead of the number
 
-        for (int i = 0; i <= 100; i+=1){
-            if (i % 15 ==0) {
-                System.out.println("FizzBuzz"); //number is divisible by 3, print Fizz
-            } else if(i % 5 == 0 ){
-                System.out.println("Buzz");
+//        for (int i = 0; i <= 100; i+=1){
+//            if (i % 15 ==0) {
+//                System.out.println("FizzBuzz"); //number is divisible by 3, print Fizz
+//            } else if(i % 5 == 0 ){
+//                System.out.println("Buzz");
+//
+//            }else if(i % 3 == 0){
+//                System.out.println("Fizz");//numbers which are multiples of both three and five
+//            }else{
+//                System.out.println(i); //otherwise print number starting from 1 to 100 (less than the fiss, buzz, fizzbuss numbers)
+//            }
+//
+//
+//        }
 
-            }else if(i % 3 == 0){
-                System.out.println("Fizz");//numbers which are multiples of both three and five
-            }else{
-                System.out.println(i); //otherwise print number starting from 1 to 100 (less than the fiss, buzz, fizzbuss numbers)
+
+//        Display a table of powers.
+//
+//        Prompt the user to enter an integer.
+//        Display a table of squares and cubes from 1 to the value entered.
+//        Ask if the user wants to continue.
+//        Assume that the user will enter valid data.
+//        Only continue if the user agrees to.
+
+//        boolean userContinues = true;
+//        do {
+//            System.out.println("Enter an integer? ");
+//            int userInt = sc.nextInt();
+//            for (int i = 1; i <= userInt; i += 1) {
+//                System.out.printf("%d %d %d\n", i, (i * i), (i * i * i));
+//            }
+//            System.out.print("Do you want to continue? ");
+//            String userResponse = sc.next();
+//            if (!userResponse.equalsIgnoreCase("y")){
+//                userContinues = false;
+//            }
+//        }while (userContinues) ;
+
+        boolean anotherGrade = true;
+        do {
+            System.out.println("Enter a grade. ");
+            int numericGrade = sc.nextInt();
+            if (numericGrade >= 88) {
+                System.out.println("A");
+            } else if (numericGrade >= 80) {
+                System.out.println("B");
+            } else if (numericGrade >= 67) {
+                System.out.println("C");
+            } else if (numericGrade >= 60) {
+                System.out.println("D");
+            } else {
+                System.out.println("F");
             }
+            System.out.print("Do you want to enter another grade (y/n)? ");
+            String userResponse = sc.next();
+            if (!userResponse.equalsIgnoreCase("y")){
+                anotherGrade = false;
+            }
+        } while (anotherGrade);
+
+    }
+
 
 
         }
 
-
-
-
-
-
-
-
-
-
-
-    }
-
-}
