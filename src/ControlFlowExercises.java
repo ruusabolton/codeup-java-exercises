@@ -5,17 +5,18 @@ public class ControlFlowExercises {
 
         Scanner sc = new Scanner(System.in);
 
-        for (int i = 0; i <= 100; i += 1) {
-            if (i % 15 == 0) {
-                System.out.println("FizzBuzz"); //number is divisible by 3, print Fizz
-            } else if (i % 5 == 0) {
-                System.out.println("Buzz");
-
-            } else if (i % 3 == 0) {
-                System.out.println("Fizz");//numbers which are multiples of both three and five
-            } else {
-                System.out.println(i); //otherwise print number starting from 1 to 100 (less than the fiss, buzz, fizzbuss numbers)
+                boolean userContinues = true;
+        do {
+            System.out.println("Enter an integer? ");
+            int userInt = sc.nextInt();
+            for (int i = 1; i <= userInt; i += 1) {
+                System.out.printf("%d %d %d\n", i, (i * i), (i * i * i));
             }
-        }
+            System.out.print("Do you want to continue? ");
+            String userResponse = sc.next();
+            if (!userResponse.equalsIgnoreCase("y")){
+                userContinues = false;
+            }
+        }while (userContinues) ;
     }
 }
