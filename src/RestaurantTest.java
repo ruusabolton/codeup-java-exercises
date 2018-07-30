@@ -8,7 +8,7 @@ public class RestaurantTest {
         dish.costIncents = 5000;
         dish.wouldRecommend = false;
 //        dish.eat("Nond");
-        Person.world_population += 1;//adds 1 to hard-coded value of world_population
+//        Person.world_population += 1;//adds 1 to hard-coded value of world_population
 //        dish.setName = "Jappi";
 
         dish.setName("Noki");//calling method in RestaurantDish
@@ -19,7 +19,7 @@ public class RestaurantTest {
         System.out.println(dish.costIncents);
         System.out.println(dish.wouldRecommend);
         System.out.println(Arithmetic.pi); //calling form a diff class
-        System.out.println(Person.world_population); //calling form a diff class
+//        System.out.println(Person.world_population); //calling form a diff class
 
 
 
