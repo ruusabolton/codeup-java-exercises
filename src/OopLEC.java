@@ -1,6 +1,6 @@
 public class OopLEC {
 
-        public static void main (String[] args){
+    public static void main(String[] args) {
 
 
 //            Person p1 = new Person();
@@ -21,18 +21,18 @@ public class OopLEC {
 //            System.out.println(p2.sayHello());
 
 
+        Dog d = new Dog();
 
-       Dog d = new Dog();
+        d.name = "Sparky";
+        d.breed = "pug";
+        d.canBreed = true;
+        d.age = 3;
+        d.callDog("jujuSparky");
+        System.out.println(d.breed);
+        System.out.println(Dog.humanToDogYears(d.age));
 
-       d.name = "Sparky";
-       d.breed = "pug";
-       d.canBreed = true;
-       d.age = 3;
-       d. callDog("jujuSparky");
-            System.out.println( d.breed );
-
-        }
-
-
+    }
 
 }
+
+

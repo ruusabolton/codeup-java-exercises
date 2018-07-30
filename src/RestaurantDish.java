@@ -3,12 +3,19 @@ public class RestaurantDish {
 
 //properties
     public Integer costIncents;
-    public String nameOfDish;
+    private String nameOfDish = "PizzaGator";
     public boolean wouldRecommend;
 
 //method
-    public void eat(String dish) {
-        System.out.println("Nom nom nom");
+//    public void eat(String dish) {
+//        System.out.println("Nom nom nom");
+//
+//    }
+    public String getName (){
+        return nameOfDish;
+    }
 
+    public void setName(String name){
+        this.nameOfDish = name;
     }
 }

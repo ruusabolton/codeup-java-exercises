@@ -2,7 +2,7 @@ public class Dog {
     public String name;
     public String breed;
     //creating a static constant; cannot be changed in the app
-    public final String animalType = "Canine";
+    public static final String animalType = "Canine"; //type is canine for all entries and will never change (use of static is for values that will not change)
     public boolean canBreed;
     public int age;
 
@@ -14,5 +14,11 @@ public class Dog {
             System.out.println(this.name+ " is not the dog we discussed ...");
 
         }
+    }
+
+    //convert dog to human years
+
+    public static double humanToDogYears (double years){
+        return years * 7;
     }
 }
