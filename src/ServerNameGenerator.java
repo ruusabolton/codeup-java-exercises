@@ -30,7 +30,7 @@ public class ServerNameGenerator {
         nouns[8] = "laptop";
         nouns[9] = "cat";
 
-
+//creates random adj and noun combo
         String randomAdj =  adjectives[(int)(Math.random() * adjectives.length)];
         String randomNoun =  nouns[(int)(Math.random() * nouns.length)];
 
