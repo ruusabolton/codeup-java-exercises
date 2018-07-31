@@ -1,7 +1,37 @@
 import java.util.Arrays;
 
 public class ServerNameGenerator {
+////outside of main
+//private static String[]adjectives = {
+//
+//    "happy",
+//    "sad",
+//    "tired",
+//    "excited",
+//    "radiant",
+//    "sunny",
+//    "cloudy",
+//    "soft",
+//    "hard",
+//    "difficult"
+//};
+//
+//private static String[]nouns = {
+//        "restaurant",
+//    "suit",
+//     "subject",
+//    "element",
+//    "toy",
+//    "lizard",
+//    "movie",
+//    "car",
+//     "laptop",
+//    "cat",
+//
+//};
 
+
+//INSIDE MAIN
     public static void main(String[] args) {
 
         //adjectives
@@ -16,6 +46,7 @@ public class ServerNameGenerator {
         adjectives[7] = "soft";
         adjectives[8] = "hard";
         adjectives[9] = "difficult";
+
 
         //nouns
         String[] nouns = new String[10];

@@ -1,30 +1,36 @@
 package movies;
-import java.util.Arrays;
+
 
 public class Movie {
 
+    public  Movie(String name, String category){
+        this.category = category;
 
-        private String name;
-        private String category;
+        this.name = name;
+
+    }
+
+
+    public String name;
+    public String category;
 
     public String getName(){
         return name;
     }
 
-    public String setName(){
+    public void setName(){
         this.name = name;
-        return this.name;
     }
-    public String getCategory(){
+    public  String getCategory(){
         return category;
     }
 
-    public String setCategory(){
+    public void setCategory(){
         this.category = category;
-        return this.category;
     }
 
 
 
 
-}
+            }
+

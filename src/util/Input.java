@@ -33,29 +33,29 @@ public class Input {
     }
 
 //    int getInt(int min, int max)
-    public Integer getInt(int min, int max){
-        System.out.println("Enter a number between 1 & 10: ");
-
-        if (!scanner.hasNextInt()) {
-            System.out.println("Not a number!");
-            return getInt(min, max);
-        }
-        int userInput = scanner.nextInt();
-        if (userInput >= 1 && userInput <= 10) {
-            return userInput;
-        } else {
-            System.out.println("Number not in range!");
-            return getInt(min, max);
-        }
-    }
+//    public Integer getInt(int min, int max){
+//        System.out.println("Enter a number between 1 & 10: ");
+//
+//        if (!scanner.hasNextInt()) {
+//            System.out.println("Not a number!");
+//            return getInt(min, max);
+//        }
+//        int userInput = scanner.nextInt();
+//        if (userInput >= 1 && userInput <= 10) {
+//            return userInput;
+//        } else {
+//            System.out.println("Number not in range!");
+//            return getInt(min, max);
+//        }
+//    }
 //    int getInt()
 
-    public Integer getInt(int userInt){
+    public Integer getInt(){
         System.out.println("Enter an integer(must be a number) : ");
-
+        int userInt;
         if (!scanner.hasNextInt()) {
             System.out.println("Not a number!");
-            return getInt(userInt);
+            return getInt();
         }
         userInt = scanner.nextInt();
 
@@ -63,7 +63,7 @@ public class Input {
             return userInt;
         } else {
             System.out.println("That is not a valid integer. Try again!");
-            return getInt(userInt);
+            return getInt();
         }
     }
 //The getInt(int min, int max) method should keep prompting the user for input until they give

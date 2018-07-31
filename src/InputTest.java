@@ -23,12 +23,12 @@ public class InputTest {
 
 //getInt(min, max)
 
-        System.out.println(input.getInt(1, 10));
+        System.out.println(input.getInt());
 
 
 //getInt()
 
-        System.out.println(input.getInt(1));
+        System.out.println(input.getInt());
 
 //getDouble(min, max)
 //        System.out.println(input.getDouble(43.43, 656.6));
