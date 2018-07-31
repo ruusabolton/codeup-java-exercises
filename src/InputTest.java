@@ -1,22 +1,43 @@
 import java.util.Scanner;
+import util.Input;
+import java.lang.*;
 
 public class InputTest {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-//getString
-        boolean getString = true;
 
-        System.out.print("Do you want to enter another grade (y/n)? ");
-        String userResponse = sc.nextLine();
-        if (!userResponse.equalsIgnoreCase("yes")) {
-            getString = false;
-        }
-////yesNo
-//util.Input.yesNo(userResponse);
-//        System.out.println(util.Input.yesNo());
 
- }
+        Input input = new Input();
+
+////getString
+//
+//        input.getString(); // one way of calling method; other ways are below.
+//
+////        System.out.println(input.getString());
+//        System.out.println(input.getString("What is your favorite drink? "));
+//
+//
+////yesNo()
+////        input.yesNo(); // one way of calling method; another way is below.
+//        System.out.println(input.yesNo());
+//
+////getInt(min, max)
+//
+//        System.out.println(input.getInt(1, 10));
+//
+//
+////getInt()
+//
+//        System.out.println(input.getInt(1));
+
+//getDouble(min, max)
+        System.out.println(input.getDouble(43.43, 656.6));
+
+
+
+
+
+    }
 
 
 }

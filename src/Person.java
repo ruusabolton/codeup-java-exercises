@@ -1,6 +1,6 @@
 public class Person {
 
-    //CLASS PERSON IS THE BLUEPRINT
+    //CLASS PERSON IS THE BLUEPRINT - DOES NOT NEED A MAIN METHOD!! MAIN MEETHOD WILL BE IN THE TESTING CLASS!
 
 ////unique properties for each person individually
 //    public String firstName;
