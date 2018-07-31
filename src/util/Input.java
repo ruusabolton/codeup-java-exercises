@@ -70,41 +70,39 @@ public class Input {
 //an integer within the min and max. The getDouble method should do the same thing, but with decimal numbers.
 
 //    double getDouble(double min, double max)
-public double getDouble (double min, double max){
-    System.out.println("Enter the 4 dollar amount for your trade: ");
+//public double getDouble (double min, double max){
+//    System.out.println("Enter the 4 dollar amount for your trade: ");
+//
+//    double dbVal1 = scanner.nextDouble();
+//    double dbVal2 = scanner.nextDouble();
+//    double dbVal3 = scanner.nextDouble();
+//    double dbVal4 = scanner.nextDouble();
+//
+//
+////    Double.max(dbVal2, dbVal3);
+////    Double.max(dbVal1, dbVal2);
+////    Double.max(dbVal1, dbVal3);
+////    Double.min(dbVal2, dbVal3);
+////    Double.min(dbVal1, dbVal2);
+////    Double.min(dbVal1, dbVal2);
+//
+//    min = Double.MIN_VALUE;
+//
+//    max = Double.MAX_VALUE;
+//
+//    return getDouble(min, max) ;
+//
+////    System.out.println("lowest dollar amount considered for a trade is: " +
+//
+//
+//
+//}
 
-    double dbVal1 = scanner.nextDouble();
-    double dbVal2 = scanner.nextDouble();
-    double dbVal3 = scanner.nextDouble();
-    double dbVal4 = scanner.nextDouble();
-
-
-//    Double.max(dbVal2, dbVal3);
-//    Double.max(dbVal1, dbVal2);
-//    Double.max(dbVal1, dbVal3);
-//    Double.min(dbVal2, dbVal3);
-//    Double.min(dbVal1, dbVal2);
-//    Double.min(dbVal1, dbVal2);
-
-    min = Double.MIN_VALUE;
-
-    max = Double.MAX_VALUE;
-
-    return getDouble(min, max) ;
-
-//    System.out.println("lowest dollar amount considered for a trade is: " +
+ public Integer TernaryTester() {
+                    int x = 5;
+                   System.out.println(x > 2 ? x < 4 ? 10 : 8 : 7);
+     return x;  }
+ }
 
 
 
-}
-
-
-
-    public  double getDouble(
-                                   double min, double max)
-    {
-
-    }
-//    double getDouble()
-
-}
