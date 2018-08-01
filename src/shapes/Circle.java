@@ -4,18 +4,38 @@ public class Circle {
 //    circumference = 2 x pi x radius
 //    area = pi x (radius ^ 2)
 
-    public String circle;
-    public double radius;
-    public double circumference = 2*Math.PI*radius;
-    double diameter;
+    private double radius;
+    private double area;
+    private double circumference;
+    private double diameter;
 
-    public void getRadius(Integer quantityBurger) {
-        System.out.println("Enter the Radius of circle:");
-
+    public Circle(double radius) {
+        this.radius = radius;
     }
 
-
-
-
-
+    public double getRadius () {
+        return this.radius;
     }
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
+
+    public double getArea(){
+        double area = Math.PI * (radius * radius);
+        return this.area;
+    }
+    public void setArea() {
+        this.area = area;
+    }
+
+    public double getCircumference() {
+        double circumference = 2 * Math.PI * radius;
+        return this.circumference;
+    }
+    public void setCircumference() {
+        this.circumference = circumference;
+    }
+
+}
+
+

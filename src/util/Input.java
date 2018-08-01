@@ -50,59 +50,48 @@ public class Input {
 //    }
 //    int getInt()
 
-    public Integer getInt(){
-        System.out.println("Enter an integer(must be a number) : ");
-        int userInt;
-        if (!scanner.hasNextInt()) {
-            System.out.println("Not a number!");
-            return getInt();
-        }
-        userInt = scanner.nextInt();
-
-        if (userInt == (int)userInt && userInt>=0) {
-            return userInt;
-        } else {
-            System.out.println("That is not a valid integer. Try again!");
-            return getInt();
-        }
-    }
+//    public Integer getInt(){
+//        System.out.println("Enter an integer(must be a number) : ");
+//        int userInt;
+//        if (!scanner.hasNextInt()) {
+//            System.out.println("Not a number!");
+//            return getInt();
+//        }
+//        userInt = scanner.nextInt();
+//
+//        if (userInt == (int)userInt && userInt>=0) {
+//            return userInt;
+//        } else {
+//            System.out.println("That is not a valid integer. Try again!");
+//            return getInt();
+//        }
+//    }
 //The getInt(int min, int max) method should keep prompting the user for input until they give
 //an integer within the min and max. The getDouble method should do the same thing, but with decimal numbers.
 
-//    double getDouble(double min, double max)
-//public double getDouble (double min, double max){
-//    System.out.println("Enter the 4 dollar amount for your trade: ");
-//
-//    double dbVal1 = scanner.nextDouble();
-//    double dbVal2 = scanner.nextDouble();
-//    double dbVal3 = scanner.nextDouble();
-//    double dbVal4 = scanner.nextDouble();
-//
-//
-////    Double.max(dbVal2, dbVal3);
-////    Double.max(dbVal1, dbVal2);
-////    Double.max(dbVal1, dbVal3);
-////    Double.min(dbVal2, dbVal3);
-////    Double.min(dbVal1, dbVal2);
-////    Double.min(dbVal1, dbVal2);
-//
-//    min = Double.MIN_VALUE;
-//
-//    max = Double.MAX_VALUE;
-//
-//    return getDouble(min, max) ;
-//
-////    System.out.println("lowest dollar amount considered for a trade is: " +
-//
-//
-//
-//}
-
- public Integer TernaryTester() {
-                    int x = 5;
-                   System.out.println(x > 2 ? x < 4 ? 10 : 8 : 7);
-     return x;  }
- }
+    public int getInt(int min, int max){
+        int userInput = Integer.parseInt(this.getString("Enter a number between " + min + " and " + max));
+        if(userInput < min || userInput > max){
+            System.err.println("Number out of range");
+            getInt(min, max);
+        }
+        return userInput;
+    }
+    public int getInt(){
+        return Integer.parseInt(this.getString("Enter a number"));
+    }
+//    public double getDouble(double min, double max){
+//        double userInput = Double.parseDouble(this.getString("Enter a decimal number between " + min + " and " + max));
+//        if(userInput < min || userInput > max){
+//            System.err.println("Decimal number out of range");
+//            userInput = getDouble(min, max);
+//        }
+//        return userInput;
+//    }
+    public double getDouble(){
+        return Double.parseDouble(this.getString("Enter a decimal number"));
+    }
+}
 
 
 
