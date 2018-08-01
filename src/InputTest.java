@@ -35,7 +35,6 @@ public class InputTest {
 //
 
 
-        System.out.println(input.TernaryTester());
 
 
     }
