@@ -6,19 +6,21 @@ public class Square extends Quadrilateral{
 //
 //Because the length of all sides of a sqare are the same, the methods for setting the length and the width should set both protected properties.
 
-
+    public Square(double length, double width){
+        super(length, width);//passes one value twice because rectangle method needs 2 values
+        }
 
     @Override
-    public  Double lengthSet(){
-        return this.length * 2;
+    void lengthSet(double length){
+        this.length = length;
     };
     @Override
-    public Double widthSet(){
-        return this.width * 2;
+    void widthSet(double width){
+        this.width = width;
     };
     @Override
     public  double getPerimeter(){
-        return (2 * length) + (2* width);
+        return (4 * length);
 
     };
 
