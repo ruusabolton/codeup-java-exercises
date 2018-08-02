@@ -10,25 +10,24 @@ public class ShapesTest {
 //                display the shape's area and circumference
 //        Test your code by creating instances of both Square and Rectangle and assigning them to myShape.
 
-Measurable myShape = new Measurable() {
-    @Override
-    public double getPerimeter() {
-        return 0;
-    }
 
-    @Override
-    public double getArea() {
-        return 0;
-    }
-};
+        //REMEMBER - you cannot instanciate an Interface!! create another datatype
+Measurable myShape = new Square(10,5) ;
 
-Square square = new Square();
-Rectangle rectangle = new Rectangle();
+Square square = new Square(5.5, 2.5);
+Rectangle rectangle = new Rectangle(6,7);
 //square = myShape;//ERROR: incompatible types
 
 //        System.out.println(myShape.getPerimeter(2));//getPerimeter() in Measurable cannot be applied
 //        System.out.println(myShape.getArea(3));//getArea() in Measurable cannot be applied
-        System.out.println(rectangle.getArea(5.5,5.5));
+        System.out.println("Area-Rectangle: "+rectangle.getArea());
+        System.out.println("Perimeter-Square: "+ square.getPerimeter());
+        System.out.println("Area-Square: "+square.getArea());
+        System.out.println("Perimeter-Rectangle: "+ rectangle.getPerimeter());
+        System.out.println("Perimeter-myShape: "+ myShape.getPerimeter());
+        System.out.println("Area-myShape: "+myShape.getArea());
+
+
 //        System.out.println(rectangle.getPerimeter(3));//ERROR getPerimeter() in Rectangle cannot be applied to (int)
 
     }
