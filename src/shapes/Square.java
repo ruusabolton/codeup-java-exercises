@@ -7,9 +7,7 @@ public class Square extends Quadrilateral{
 //Because the length of all sides of a sqare are the same, the methods for setting the length and the width should set both protected properties.
 
 
-    Square(){
-        super();
-    }
+
     @Override
     public  Double lengthSet(){
         return this.length * 2;

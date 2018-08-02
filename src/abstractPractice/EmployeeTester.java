@@ -18,12 +18,15 @@ public class EmployeeTester {
         PowerControllable mic = new Mic();
         PowerControllable janitor = new Janitor();
 //       System.out.println(PowerControllable.PowerOn());
-//       PowerControllable.setUpClassroom(PowerControllable[devices]);
+
+        PowerControllable[]devices = {mic, janitor};
+        setUpClassroom(devices);
     }
 
     public static void setUpClassroom(PowerControllable[] devices) {
         for (PowerControllable device : devices) {
             device.powerOn();
+            device.powerOff();
         }
     }
 }

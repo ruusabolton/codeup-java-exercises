@@ -1,12 +1,7 @@
 package shapes;
-//blueprint
-//superclass
+//SUBCLASS
 public class Rectangle extends Quadrilateral implements Measurable {
 
-
-    Rectangle(){
-        super();
-    }
     @Override
     public  Double lengthSet(){
         return this.length * this.length;
@@ -29,6 +24,8 @@ public class Rectangle extends Quadrilateral implements Measurable {
     };
 
 }
+
+
 //INHERITANCE & POLYMORPHISM EXERCISE
 
 ////instances or properties(do not belong to the class because they are not static)
